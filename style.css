@@ -1,0 +1,106 @@
+body {
+    font-family: Arial, sans-serif;
+    /* max-width: 400px; */
+    margin: 0 auto;
+    padding: 20px;
+}
+
+.judul {
+    font-style: normal;
+    margin-left: 10px;
+}
+
+.deskripsi{
+    margin-left: 10px;
+}
+
+label {
+    display: block;
+    margin-top: 10px;
+}
+
+.beratbadan{
+    width: 100% ;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.umur{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.tinggibadan{
+    width: 100%;
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+input {
+    padding: 5px;
+    margin-bottom: 10px;
+}
+
+.hitung{
+    /* display: block; */
+    padding: 10px;
+    background-color: #45CFDD;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.reset{
+    /* display: block; */
+    padding: 10px;
+    background-color: white;
+    color: black;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.sub-title {
+    font-style: normal;
+    margin-left: 10px;
+}
+
+.Pr-1{
+    margin-left: 10px;
+}
+
+.pr-2{
+    margin-left: 10px;
+}
+
+.h-1{
+    font-style: normal;
+    margin-left: 10px;
+}
+
+.download{
+    padding: 10px;
+    background-color: #45CFDD;
+    color: white;
+    border: none;
+    cursor: pointer;
+    border-radius: 4px; 
+}
+
+.box-2{
+    padding: 30px;
+    background-color: #F5F5F5;
+    margin: 10px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: grey;
+}
+
+#result {
+    margin-top: 20px;
+    font-weight: bold;
+}

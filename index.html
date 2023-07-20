@@ -4,39 +4,35 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Calculator</title>
+    <link rel="stylesheet" href="style.css">
 </head>
 <style>
   .box{
     padding: 30px;
     background-color: #F5F5F5;
     margin: 10px;
+    border-radius: 5px;
   };
 </style>
 <body>
-    <main>
-        <section id="home" class="h-1">
     <h1 class="judul">Kalkulator BMI</h1>
     <p class="deskripsi">Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu?
         Yuk, hitung sekarang di kalkulator BMI.</p>
     
-    <div class="box">
+    <div class="box" id="bmiform">
         <label for="gender">Jenis Kelamin:</label><br>
         <input type="radio" name="gender" value="male" checked> Pria
         <input type="radio" name="gender" value="female"> Wanita<br><br>
         <label for="weight">Berat Badan (kg)</label><br>
-        <input type="number" id="weight" placeholder="Enter weight in kilograms"><br><br>
+        <input type="number" id="weight" placeholder="Enter weight in kilograms" class="beratbadan"><br><br>
         <label for="age">Umur (Tahun)</label><br>
-        <input type="number" id="weight" placeholder="Enter age in years"><br><br>
+        <input type="number" id="age" placeholder="Enter age in years" class="umur"><br><br>
         <label for="height">Tinggi Badan (cm)</label><br>
-        <input type="number" id="height" placeholder="Enter height in centimeters"><br><br>
-        <button onclick="calculateBMI()">Hitung BMI</button>
-        <button onclick="reset()">Reset</button>
-    
-        <div id="result"></div>
-    
-        <script src="bmi_calculator.js"></script>
+        <input type="number" id="height" placeholder="Enter height in centimeters" class="tinggibadan"><br><br>
+        <button class="hitung" onclick="calculateBMI()">Hitung BMI</button>
+        <button class="reset" onclick="reset()" type="reset">Reset</button>
     </div>
-    <div class="box-2">
+    <div class="keunggulan-fitur">
         <h3 class="sub-title">Keunggulan Fitur</h3>
         <ol class="fitur">
             <li>Menghitung Berat Badan</li>
@@ -46,10 +42,13 @@
         <p class="Pr-1">Kalkulator ini hanya boleh digunakan oleh orang dewasa (wanita hamil atau menyusui tidak boleh mengandalkan pembacaan BMI ini) dan tidak ada tindakan yang harus diambil berdasarkan nilainya selain berkonsultasi dengan orang yang memenuhi syarat seperti dokter.</p>
         <p class="pr-2">Kalkulator akan memberi anda gambaran tentang perbandingan berat badan anda dengan nilai umum. Indek Massa Tubuh (atau BMI) dihitung sebagai berat badan anda (dalam kilogram) dibagi dengan kuadrat tinggi badan anda (dalam meter) atau BMI = Kg/M<sup>2</sup>.</p>
     </div>
-        </section>
-        <section id="hasil" class="h-2">
-            <h2></h2>
-        </section>
-    </main>
+    <h2 class="h-1">Hasil</h2>
+    <div class="box-2">
+        <div id="result"></div>
+        <button class="download">Download Hasil</button>
+        <p id="result-des" class="result-des"></p>
+    </div>
+    
+    <script src="bmi_calculator.js"></script>
 </body>
 </html>
