@@ -18,20 +18,21 @@
     <h1 class="judul">Kalkulator BMI</h1>
     <p class="deskripsi">Berat badan ideal adalah impian semua orang. Tidak hanya memiliki bentuk tubuh yang menunjang penampilan, berat badan ideal juga menandakan kondisi tubuh yang sehat. Bagaimana denganmu?
         Yuk, hitung sekarang di kalkulator BMI.</p>
-    
-    <div class="box" id="bmiform">
-        <label for="gender">Jenis Kelamin:</label><br>
-        <input type="radio" name="gender" value="male" checked> Pria
-        <input type="radio" name="gender" value="female"> Wanita<br><br>
-        <label for="weight">Berat Badan (kg)</label><br>
-        <input type="number" id="weight" placeholder="Enter weight in kilograms" class="beratbadan"><br><br>
-        <label for="age">Umur (Tahun)</label><br>
-        <input type="number" id="age" placeholder="Enter age in years" class="umur"><br><br>
-        <label for="height">Tinggi Badan (cm)</label><br>
-        <input type="number" id="height" placeholder="Enter height in centimeters" class="tinggibadan"><br><br>
-        <button class="hitung" onclick="calculateBMI()">Hitung BMI</button>
-        <button class="reset" onclick="reset()" type="reset">Reset</button>
-    </div>
+    <form id="bmiForm">
+        <div class="box">
+            <label for="gender">Jenis Kelamin:</label><br>
+            <input type="radio" name="gender" value="male" checked> Pria
+            <input type="radio" name="gender" value="female"> Wanita<br><br>
+            <label for="weight">Berat Badan (kg)</label><br>
+            <input type="number" id="weight" placeholder="Enter weight in kilograms" class="beratbadan"><br><br>
+            <label for="age">Umur (Tahun)</label><br>
+            <input type="number" id="age" placeholder="Enter age in years" class="umur"><br><br>
+            <label for="height">Tinggi Badan (cm)</label><br>
+            <input type="number" id="height" placeholder="Enter height in centimeters" class="tinggibadan"><br><br>
+            <button class="hitung" onclick="calculateBMI()">Hitung BMI</button>
+            <button class="reset" onclick="reset()" type="reset">Reset</button>
+        </div>
+    </form>
     <div class="keunggulan-fitur">
         <h3 class="sub-title">Keunggulan Fitur</h3>
         <ol class="fitur">
@@ -44,9 +45,12 @@
     </div>
     <h2 class="h-1">Hasil</h2>
     <div class="box-2">
-        <div id="result"></div>
+        <div id="result"></div><br>
+        <div id="result-desc"></div><br>
         <button class="download">Download Hasil</button>
-        <p id="result-des" class="result-des"></p>
+    </div>
+    <div class="desc">
+        <p id="p-1"></p>
     </div>
     
     <script src="bmi_calculator.js"></script>
